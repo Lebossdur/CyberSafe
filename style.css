@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff;
+    color: #222;
+}
+
+header {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+nav {
+    background-color: #0d9488;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+}
+
+h2 {
+    color: #075985;
+}
+
+.cartes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+.bouton {
+    display: inline-block;
+    background-color: #0d9488;
+    color: white;
+    padding: 15px 25px;
+    margin: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px;
+}
+
+.illustrations div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.illustrations p {
+    font-size: 16px;
+    color: #075985;
+}
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="conseils.html">Conseils</a>
+    <a href="protection.html">Protection</a>
+    <a href="hacking-ethique.html">Hacking éthique</a>
+</nav>
