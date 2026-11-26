@@ -1,101 +1,154 @@
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #eaf6ff;
-    color: #222;
+    background: #071426;
+    color: #eafaff;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #164e63;
-    color: white;
     text-align: center;
-    padding: 30px;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #071426, #123b5a);
+    border-bottom: 2px solid #00d9ff;
 }
 
 header h1 {
-    font-size: 38px;
+    margin: 0;
+    font-size: 48px;
+    color: #00e5ff;
+    text-shadow: 0 0 15px #00bcd4;
+}
+
+header p {
+    color: #c5eaff;
+    font-size: 18px;
 }
 
 nav {
-    background-color: #0d9488;
+    background: #0b2035;
+    padding: 18px 10px;
     text-align: center;
-    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #087e9b;
 }
 
 nav a {
-    color: white;
+    display: inline-block;
+    color: #eafaff;
     text-decoration: none;
-    margin: 20px;
     font-weight: bold;
+    margin: 7px 12px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00e5ff;
+    text-shadow: 0 0 12px #00e5ff;
 }
 
 main {
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
-    padding: 25px;
-    text-align: center;
+    padding: 40px 22px;
 }
 
 h2 {
-    color: #075985;
+    color: #00e5ff;
+    font-size: 30px;
+}
+
+h3 {
+    color: #55eaff;
+}
+
+.intro {
+    text-align: center;
+    padding: 25px 10px;
 }
 
 .cartes {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 22px;
     justify-content: center;
+    margin: 30px 0;
 }
 
 article {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    flex: 1;
-    box-shadow: 0 2px 8px #cccccc;
+    flex: 1 1 260px;
+    padding: 25px;
+    background: linear-gradient(145deg, #102b45, #0b1d30);
+    border: 1px solid #087e9b;
+    border-radius: 16px;
+    box-shadow: 0 0 15px #001e35;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    border-color: #00e5ff;
+    box-shadow: 0 0 20px #00bcd455;
 }
 
 .bouton {
     display: inline-block;
-    background-color: #0d9488;
-    color: white;
-    padding: 15px 25px;
-    margin: 20px;
-    border-radius: 10px;
+    padding: 13px 25px;
+    margin-top: 12px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #008ca8, #00c9d8);
+    color: #041522;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.bouton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #00e5ff;
+}
+
+.encadre {
+    background: #102b45;
+    border-left: 4px solid #00e5ff;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
 }
 
 footer {
-    background-color: #164e63;
-    color: white;
+    background: #06111f;
+    color: #9ccddd;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #087e9b;
 }
 
-.illustrations {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 25px;
-}
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 36px;
+    }
 
-.illustrations div {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    font-size: 35px;
-    text-align: center;
-}
+    nav {
+        position: static;
+    }
 
-.illustrations p {
-    font-size: 16px;
-    color: #075985;
-}
+    nav a {
+        margin: 7px;
+        font-size: 14px;
+    }
 
-<nav>
-    <a href="index.html">Accueil</a>
-    <a href="conseils.html">Conseils</a>
-    <a href="protection.html">Protection</a>
-    <a href="hacking-ethique.html">Hacking éthique</a>
-</nav>
+    main {
+        padding: 25px 15px;
+    }
+}
