@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberSafe - Cyberattaques</title>
+    <title>CyberSafe | Cyberattaques</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>⚠️ Les cyberattaques</h1>
-    <p>Comprendre les menaces pour mieux les éviter</p>
+    <div class="logo">CYBER <span class="gradient-text">MENACES</span></div>
+    <p>Reconnaître les risques pour mieux les éviter.</p>
 </header>
 
 <nav>
@@ -20,54 +21,67 @@
     <a href="protection.html">Protection</a>
     <a href="hacking-ethique.html">Hacking éthique</a>
     <a class="active" href="attaques.html">Cyberattaques</a>
+    <a href="quiz.html">Quiz</a>
 </nav>
 
 <main>
-    <section class="intro">
-        <h2>Quelles sont les principales menaces ?</h2>
-        <p>Découvre quelques cyberattaques fréquentes et les moyens de s'en protéger.</p>
+    <section class="page-title">
+        <h2>Les menaces du monde numérique</h2>
+        <p>Apprends à reconnaître les principales cyberattaques.</p>
     </section>
 
     <section class="cartes">
-        <article>
-            <h3>🎣 Le phishing</h3>
-            <p>Un faux message ou site cherche à tromper une personne pour obtenir ses informations.</p>
-            <p><strong>Protection :</strong> vérifie l'expéditeur et l'adresse du site avant de répondre.</p>
+        <article class="reveal">
+            <div class="emoji">🎣</div>
+            <h3>Phishing</h3>
+            <p>Un faux message ou site cherche à te tromper pour obtenir des informations personnelles.</p>
+            <p><strong>Protection :</strong> vérifie l'expéditeur et l'adresse du site.</p>
         </article>
 
-        <article>
-            <h3>🔒 Les rançongiciels</h3>
+        <article class="reveal">
+            <div class="emoji">🔒</div>
+            <h3>Rançongiciel</h3>
             <p>Un logiciel malveillant peut bloquer l'accès à des fichiers et réclamer une rançon.</p>
-            <p><strong>Protection :</strong> garde tes appareils à jour et conserve des sauvegardes.</p>
+            <p><strong>Protection :</strong> effectue des sauvegardes et maintiens tes appareils à jour.</p>
         </article>
 
-        <article>
-            <h3>🌐 Les attaques DDoS</h3>
-            <p>Un service en ligne reçoit un très grand nombre de requêtes et peut devenir indisponible.</p>
-            <p><strong>Protection :</strong> les organisations utilisent des systèmes de filtrage et de protection du trafic.</p>
+        <article class="reveal">
+            <div class="emoji">🌐</div>
+            <h3>DDoS</h3>
+            <p>Un service reçoit un très grand nombre de requêtes et peut devenir indisponible.</p>
+            <p><strong>Protection :</strong> les organisations utilisent des systèmes de filtrage du trafic.</p>
         </article>
 
-        <article>
-            <h3>🕵️ Le vol de données</h3>
-            <p>Des informations personnelles ou confidentielles peuvent être récupérées sans autorisation.</p>
-            <p><strong>Protection :</strong> limite les informations partagées et protège tes comptes.</p>
+        <article class="reveal">
+            <div class="emoji">🕵️</div>
+            <h3>Vol de données</h3>
+            <p>Des informations confidentielles peuvent être récupérées sans autorisation.</p>
+            <p><strong>Protection :</strong> protège tes comptes et limite les données partagées.</p>
         </article>
 
-        <article>
-            <h3>🎭 L'usurpation d'identité</h3>
-            <p>Quelqu'un utilise les informations d'une autre personne pour se faire passer pour elle.</p>
-            <p><strong>Protection :</strong> protège tes données et signale les comptes suspects.</p>
+        <article class="reveal">
+            <div class="emoji">🎭</div>
+            <h3>Usurpation d'identité</h3>
+            <p>Une personne utilise les informations d'une autre pour se faire passer pour elle.</p>
+            <p><strong>Protection :</strong> protège tes informations et signale les faux comptes.</p>
+        </article>
+
+        <article class="reveal">
+            <div class="emoji">🦠</div>
+            <h3>Logiciel malveillant</h3>
+            <p>Un programme peut perturber un appareil ou accéder à des informations sans autorisation.</p>
+            <p><strong>Protection :</strong> utilise des sources fiables pour tes téléchargements.</p>
         </article>
     </section>
 
-    <div class="encadre">
-        <h3>🚨 En cas de cyberattaque</h3>
-        <p>Ne réponds pas aux messages suspects. Préviens un adulte de confiance ou le service concerné et demande de l'aide pour sécuriser tes comptes.</p>
+    <div class="encadre reveal">
+        <h3>🚨 Face à une menace</h3>
+        <p>Ne réponds pas dans la précipitation. Conserve les informations utiles, préviens un adulte de confiance et demande de l'aide pour sécuriser tes comptes.</p>
     </div>
 </main>
 
 <footer>
-    <p>© 2026 CyberSafe</p>
+    <p>© <span class="year"></span> <span>CyberSafe</span></p>
 </footer>
 
 </body>

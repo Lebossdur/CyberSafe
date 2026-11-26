@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe | Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">CYBER<span class="gradient-text">QUIZ</span></div>
+    <p>Teste tes connaissances en cybersécurité.</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="conseils.html">Conseils</a>
+    <a href="protection.html">Protection</a>
+    <a href="hacking-ethique.html">Hacking éthique</a>
+    <a href="attaques.html">Cyberattaques</a>
+    <a class="active" href="quiz.html">Quiz</a>
+</nav>
+
+<main>
+    <section class="page-title">
+        <h2>Es-tu prêt à relever le défi ?</h2>
+        <p>8 questions pour tester tes réflexes numériques.</p>
+    </section>
+
+    <section class="quiz-box" id="quiz">
+
+        <div id="quiz-start" class="result">
+            <div style="font-size:55px">🧠</div>
+            <h2>Mission cybersécurité</h2>
+            <p>Réponds aux 8 questions et découvre ton score final.</p>
+            <br>
+            <button class="bouton" id="start-quiz">Commencer le quiz →</button>
+        </div>
+
+        <div id="quiz-game" class="hidden">
+            <p id="counter">Question 1 / 8</p>
+
+            <div class="progress">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+
+            <h3 class="quiz-question" id="question"></h3>
+
+            <div class="quiz-options" id="options"></div>
+
+            <p class="quiz-feedback" id="feedback" aria-live="polite"></p>
+
+            <div class="quiz-controls">
+                <span style="color:#a8bfd4;font-size:13px">CyberSafe Challenge</span>
+                <button class="bouton hidden" id="next">Suivant →</button>
+            </div>
+        </div>
+
+        <div id="quiz-result" class="result hidden" aria-live="polite">
+            <div style="font-size:55px">🏆</div>
+            <h2>Mission terminée !</h2>
+            <strong id="score">0 / 8</strong>
+            <p id="result-message"></p>
+            <br>
+            <button class="bouton" id="restart">Recommencer ↻</button>
+        </div>
+
+    </section>
+
+    <div class="encadre">
+        <h3>Continue à apprendre !</h3>
+        <p>Un bon réflexe numérique peut éviter bien des problèmes. Explore les autres pages de CyberSafe pour progresser.</p>
+    </div>
+</main>
+
+<footer>
+    <p>© <span class="year"></span> <span>CyberSafe</span> — Le savoir est ta meilleure protection.</p>
+</footer>
+
+</body>
+</html>

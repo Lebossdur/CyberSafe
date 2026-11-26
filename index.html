@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberSafe - Accueil</title>
+    <meta name="description" content="CyberSafe : découvre la cybersécurité, les bons réflexes et les menaces sur Internet.">
+    <title>CyberSafe | Accueil</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>🛡️ CyberSafe</h1>
-    <p>Protégeons notre monde numérique</p>
+    <div class="logo">CYBER<span class="gradient-text">SAFE</span></div>
+    <p>Comprendre. Prévenir. Protéger.</p>
 </header>
 
 <nav>
@@ -20,62 +22,74 @@
     <a href="protection.html">Protection</a>
     <a href="hacking-ethique.html">Hacking éthique</a>
     <a href="attaques.html">Cyberattaques</a>
+    <a href="quiz.html">Quiz</a>
 </nav>
 
 <main>
-    <section class="intro">
-        <h2>Bienvenue sur CyberSafe !</h2>
+    <section class="hero">
+        <span class="tag">● TON GUIDE DE CYBERSÉCURITÉ</span>
+        <h2>Le monde numérique évolue.<br><span class="gradient-text">Protège ta place dedans.</span></h2>
         <p>
-            Internet est un espace formidable pour apprendre,
-            communiquer et découvrir. Mais il faut aussi savoir
-            se protéger contre les dangers du numérique.
+            Apprends à reconnaître les dangers du Web,
+            à protéger tes informations et à adopter les bons réflexes.
+            La cybersécurité commence ici.
         </p>
-        <p>
-            Découvre les bons réflexes pour naviguer sur Internet
-            de manière plus sûre.
-        </p>
-        <a class="bouton" href="conseils.html">Découvrir les conseils</a>
+        <div class="actions">
+            <a class="bouton" href="conseils.html">Explorer CyberSafe →</a>
+            <a class="bouton secondaire" href="quiz.html">Tester mes connaissances</a>
+        </div>
     </section>
 
-    <h2>Explore CyberSafe</h2>
+    <section class="section-title reveal">
+        <h2>Explore l'univers CyberSafe</h2>
+        <p>Tout ce qu'il faut savoir pour mieux comprendre Internet.</p>
+    </section>
 
     <section class="cartes">
-        <article>
-            <h3>💡 Les conseils</h3>
-            <p>Découvre les habitudes à adopter pour rester prudent sur Internet.</p>
-            <a class="bouton" href="conseils.html">En savoir plus</a>
+        <article class="reveal">
+            <div class="emoji">💡</div>
+            <h3>Les bons conseils</h3>
+            <p>Découvre les habitudes simples pour naviguer plus prudemment.</p>
+            <a class="bouton secondaire" href="conseils.html">Découvrir →</a>
         </article>
 
-        <article>
-            <h3>🔐 La protection</h3>
-            <p>Apprends à protéger tes comptes et tes informations personnelles.</p>
-            <a class="bouton" href="protection.html">En savoir plus</a>
+        <article class="reveal">
+            <div class="emoji">🔐</div>
+            <h3>Ta protection</h3>
+            <p>Apprends à protéger tes comptes, tes appareils et tes données.</p>
+            <a class="bouton secondaire" href="protection.html">Découvrir →</a>
         </article>
 
-        <article>
-            <h3>💻 Le hacking éthique</h3>
-            <p>Découvre comment les spécialistes contribuent à la sécurité informatique.</p>
-            <a class="bouton" href="hacking-ethique.html">En savoir plus</a>
+        <article class="reveal">
+            <div class="emoji">💻</div>
+            <h3>Hacking éthique</h3>
+            <p>Comprends le rôle des professionnels de la sécurité informatique.</p>
+            <a class="bouton secondaire" href="hacking-ethique.html">Découvrir →</a>
         </article>
 
-        <article>
-            <h3>⚠️ Les cyberattaques</h3>
-            <p>Comprends les principales menaces et comment les éviter.</p>
-            <a class="bouton" href="attaques.html">En savoir plus</a>
+        <article class="reveal">
+            <div class="emoji">⚠️</div>
+            <h3>Cyberattaques</h3>
+            <p>Identifie les principales menaces et apprends à les éviter.</p>
+            <a class="bouton secondaire" href="attaques.html">Découvrir →</a>
+        </article>
+
+        <article class="reveal">
+            <div class="emoji">🧠</div>
+            <h3>Quiz CyberSafe</h3>
+            <p>Réponds à 8 questions et découvre ton score en cybersécurité.</p>
+            <a class="bouton" href="quiz.html">Lancer le quiz →</a>
         </article>
     </section>
 
-    <div class="encadre">
-        <h3>🌐 Le savais-tu ?</h3>
-        <p>
-            Un mot de passe différent pour chaque compte
-            aide à limiter les risques si l'un de tes comptes est compromis.
-        </p>
+    <div class="encadre reveal">
+        <h3>🛡️ La règle d'or</h3>
+        <p>Sur Internet, prends le temps de vérifier avant de cliquer, de partager ou de communiquer des informations personnelles.</p>
     </div>
 </main>
 
 <footer>
-    <p>© 2026 CyberSafe - Apprendre à se protéger sur Internet</p>
+    <p>© <span class="year"></span> <span>CyberSafe</span> — Apprendre à naviguer plus sûrement.</p>
 </footer>
 
 </body>

@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberSafe - Conseils</title>
+    <title>CyberSafe | Conseils</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>💡 Nos conseils</h1>
-    <p>Les bons réflexes pour naviguer sereinement</p>
+    <div class="logo">NOS <span class="gradient-text">CONSEILS</span></div>
+    <p>Les bons réflexes commencent par de petites habitudes.</p>
 </header>
 
 <nav>
@@ -20,54 +21,61 @@
     <a href="protection.html">Protection</a>
     <a href="hacking-ethique.html">Hacking éthique</a>
     <a href="attaques.html">Cyberattaques</a>
+    <a href="quiz.html">Quiz</a>
 </nav>
 
 <main>
-    <section class="intro">
-        <h2>Adopte les bons réflexes !</h2>
-        <p>Quelques habitudes simples peuvent améliorer ta sécurité en ligne.</p>
+    <section class="page-title">
+        <h2>Les réflexes à adopter</h2>
+        <p>Quelques habitudes pour profiter d'Internet plus sereinement.</p>
     </section>
 
     <section class="cartes">
-        <article>
-            <h3>🔑 Choisis de bons mots de passe</h3>
-            <p>Utilise des mots de passe longs, difficiles à deviner et différents pour tes comptes.</p>
+        <article class="reveal">
+            <div class="emoji">🔑</div>
+            <h3>Des mots de passe uniques</h3>
+            <p>Utilise des mots de passe longs et différents pour tes comptes importants.</p>
         </article>
 
-        <article>
-            <h3>🔗 Méfie-toi des liens</h3>
-            <p>Ne clique pas sur un lien suspect reçu par message ou par e-mail.</p>
+        <article class="reveal">
+            <div class="emoji">🔗</div>
+            <h3>Vérifie les liens</h3>
+            <p>Regarde attentivement l'adresse d'un site avant de saisir des informations.</p>
         </article>
 
-        <article>
-            <h3>🤫 Protège tes informations</h3>
-            <p>Évite de publier ton adresse, ton numéro de téléphone ou des informations privées.</p>
+        <article class="reveal">
+            <div class="emoji">🤫</div>
+            <h3>Protège ta vie privée</h3>
+            <p>Évite de publier ton adresse, ton numéro ou des informations personnelles.</p>
         </article>
 
-        <article>
-            <h3>📥 Attention aux téléchargements</h3>
-            <p>Télécharge uniquement depuis des sites et des sources fiables.</p>
+        <article class="reveal">
+            <div class="emoji">📥</div>
+            <h3>Télécharge prudemment</h3>
+            <p>Privilégie les sites officiels et les sources reconnues.</p>
         </article>
 
-        <article>
-            <h3>🔄 Fais les mises à jour</h3>
-            <p>Les mises à jour corrigent souvent des problèmes de sécurité.</p>
+        <article class="reveal">
+            <div class="emoji">🔄</div>
+            <h3>Fais les mises à jour</h3>
+            <p>Les mises à jour corrigent des erreurs et des failles de sécurité.</p>
         </article>
 
-        <article>
-            <h3>🧠 Réfléchis avant de partager</h3>
-            <p>Une information publiée en ligne peut être difficile à effacer complètement.</p>
+        <article class="reveal">
+            <div class="emoji">🧠</div>
+            <h3>Réfléchis avant de partager</h3>
+            <p>Une publication peut être copiée ou diffusée au-delà de ton cercle d'amis.</p>
         </article>
     </section>
 
-    <div class="encadre">
-        <h3>À retenir</h3>
-        <p>En cas de doute face à un message ou un comportement inquiétant en ligne, prends le temps de vérifier et demande conseil à un adulte de confiance.</p>
+    <div class="encadre reveal">
+        <h3>Un message te semble suspect ?</h3>
+        <p>Ne clique pas dans la précipitation. Vérifie l'expéditeur par un autre moyen et demande conseil à une personne de confiance.</p>
     </div>
 </main>
 
 <footer>
-    <p>© 2026 CyberSafe</p>
+    <p>© <span class="year"></span> <span>CyberSafe</span></p>
 </footer>
 
 </body>
